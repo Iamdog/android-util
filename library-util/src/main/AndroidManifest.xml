@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lqw.library_util">
+
+    <application>
+        <provider
+            android:name="com.lqw.library_util.provider.UtilsFileProvider"
+            android:authorities="com.lqw.library_util.provider.UtilsFileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+</manifest>
